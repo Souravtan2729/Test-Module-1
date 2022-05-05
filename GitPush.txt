@@ -1,0 +1,77 @@
+.LOG
+1:16 AM 5/6/2022
+
+Trishyo@DESKTOP-J8QL48L MINGW64 /H/Review1 (master)
+$ git config --global user.email "elnino.trishyo@gmail.com"    #To configure user email
+
+Trishyo@DESKTOP-J8QL48L MINGW64 /H/Review1 (master)
+$ git config --global user.name "Trishyo"			#To configure user name
+
+Trishyo@DESKTOP-J8QL48L MINGW64 /H/Review1 (master)
+$ git commit -m "This is going to be my first push"		#Committing the cause for push
+hint: core.useBuiltinFSMonitor will be deprecated soon; use core.fsmonitor instead
+hint: Disable this message with "git config advice.useCoreFSMonitorConfig false"
+[master (root-commit) 85a4ead] This is going to be my first push
+ 12 files changed, 28 insertions(+)
+ create mode 100644 Bye.txt
+ create mode 100644 Bye/Bye.txt
+ create mode 100644 GoodMorning.java
+ create mode 100644 Hi.txt
+ create mode 100644 Hi/Hi.txt
+ create mode 100644 ReadMe.md
+ create mode 100644 TerminalCommands.sh
+ create mode 100644 linux-content
+ create mode 100644 temp/Review1
+ create mode 100644 temp/test
+ create mode 100644 temp/test2
+ create mode 100644 test
+
+Trishyo@DESKTOP-J8QL48L MINGW64 /H/Review1 (master)
+$ git remote add origin https://github.com/Trishyo/Test-Module-1/upload/main		#Wrong Path to add origin
+
+Trishyo@DESKTOP-J8QL48L MINGW64 /H/Review1 (master)
+$ git push -u origin master						#Command to push in Personal Repo of GitHub
+fatal: https://github.com/Trishyo/Test-Module-1/upload/main/info/refs not valid: is this a git repository?   #Error to push
+
+Trishyo@DESKTOP-J8QL48L MINGW64 /H/Review1 (master)
+$ git remote add origin https://github.com/Trishyo/Test-Module-1
+error: remote origin already exists.
+
+Trishyo@DESKTOP-J8QL48L MINGW64 /H/Review1 (master)
+$ git remote -v				#To check present remote branches that can connect
+origin  https://github.com/Trishyo/Test-Module-1/upload/main (fetch)
+origin  https://github.com/Trishyo/Test-Module-1/upload/main (push)
+
+Trishyo@DESKTOP-J8QL48L MINGW64 /H/Review1 (master)
+$ git remote rm origin			#to remove original or main branch
+
+Trishyo@DESKTOP-J8QL48L MINGW64 /H/Review1 (master)
+$ git remote add origin https://github.com/Trishyo/Test-Module-1		#Right Path to link Repo with Local
+
+Trishyo@DESKTOP-J8QL48L MINGW64 /H/Review1 (master)
+$ git push -u origin master							#SUCCESSFUL PUSH
+Enumerating objects: 8, done.
+Counting objects: 100% (8/8), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (8/8), 970 bytes | 161.00 KiB/s, done.
+Total 8 (delta 0), reused 0 (delta 0), pack-reused 0
+remote:
+remote: Create a pull request for 'master' on GitHub by visiting:
+remote:      https://github.com/Trishyo/Test-Module-1/pull/new/master
+remote:
+To https://github.com/Trishyo/Test-Module-1
+ * [new branch]      master -> master
+branch 'master' set up to track 'origin/master'.
+
+
+
+
+
+
+
+
+git branch -m main github
+git fetch origin
+git branch -u origin/github github
+git remote set-head origin -a
